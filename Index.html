@@ -6,48 +6,69 @@
     <title>Index</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .image-container img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+}
+
+
+.ul-list {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 39px; */
+}
+ul.ul-list .li-list {
+    margin: 10px 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media(max-width:425px){
+.xyyyyz{
+    text-align: center;
+}
+}
+@media(max-width:375px){
+.xyyyyz{
+    text-align: left;
+}
+}
+    </style>
 </head>
 <body>
-    <div style="background-image: url('img.jpg') ;height: 80vh;">
-
+    <div style="background-image: url('img.jpg') ;height: 100vh;">
         <div class="row">
-            
-            <div class="col-md-1">
-                <img src="pngegg.png" alt="Bootstrap Logo" style="height: 50px; width: auto;">
+            <div class="col-md-2 w-100 xyyyyz">
+                <div class="image-container">
+                    <img src="./img.jpg">
+                </div>
             </div>
-            <div class="col-md-10 mt-2">
-            <ul class="nav justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link active text-white" href="#">Active link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Disabled link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="#">Disabled link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Disabled link</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-1 mt-2">
-            <button class="btn btn-outline-primary rounded-pill text-white">Sign Up</button>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-4 justify-content-center align-items-center d-flex" style="height: 50vh;">
-            <div class="row">
-                <h1>Start your amazing work through apply</h1>
+            <div class="col-md-8">
+                <div class="nav-bar w-100">
+                    <ul class="ul-list">
+                        <li class="li-list">Home</li>
+                        <li class="li-list">ABout us</li>
+                        <li class="li-list">COntact us</li>
+                        <li class="li-list">XYZ</li>
+                    </ul>
+                </div>
             </div>
-            <div class="row">
+            <div class="col-md-2">
+                <div class="image-container">
+                    <img src="./pngegg.png">
+                </div>
             </div>
         </div>
     </div>
-</div>
     
 </body>
 </html>
